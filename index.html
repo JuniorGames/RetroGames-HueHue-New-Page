@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RetroGames HueHue - A melhor plataforma de jogos retrô online. Jogue Arcade, Nintendo, Sega, PlayStation e mais diretamente no navegador!">
+    <meta name="keywords" content="retro games, emulator, arcade, nintendo, sega, playstation, online games, emulatorjs">
+    <meta name="theme-color" content="#22c55e">
+    
+    <title>RetroGames HueHue</title>
+    
+    <meta name="author" content="Junior Games">
+    <link rel="icon" href="/index_files/favicon.png" type="image/png">
+    <meta property="og:title" content="RetroGames HueHue">
+    <meta property="og:description" content="A melhor plataforma de jogos retrô online. Jogue onde estiver no seu dispositivo pelo Navegador de Internet!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/favicon.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@juniorgameslives">
+    <meta name="twitter:image" content="/favicon.png">
+    
+    <script type="module" crossorigin src="./index_files/index--dqLWaYF.js.download"></script>
+    <link rel="stylesheet" crossorigin href="./index_files/index-BsnzOB1q.css">
+    
+    <style>
+        .category-btn.active {
+            background-color: rgb(34 197 94) !important;
+            color: white !important;
+            border-color: rgb(34 197 94) !important;
+            box-shadow: 0 0 10px rgba(34, 197, 94, 0.5) !important;
+        }
+        
+        .category-btn.active:hover {
+            background-color: rgb(34 197 94) !important;
+            color: white !important;
+            border-color: rgb(34 197 94) !important;
+            box-shadow: 0 0 10px rgba(34, 197, 94, 0.5) !important;
+        }
+        
+        .category-btn {
+            cursor: pointer;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="min-h-screen bg-background relative scanlines">
+            <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-8">
+                <div class="absolute inset-0 bg-grid opacity-30"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background"></div>
+                
+                <div class="absolute left-4 md:left-10 top-1/4 hidden lg:block">
+                    <img src="./index_files/huehue.png" alt="" class="w-40 xl:w-56 animate-float" style="animation-delay: 0s;">
+                </div>
+                
+                <div class="absolute right-4 md:right-10 top-1/4 hidden lg:block">
+                    <img src="./index_files/jr.png" alt="" class="w-40 xl:w-56 animate-float" style="animation-delay: 1.5s;">
+                </div>
+                
+                <div class="relative z-10 container mx-auto px-4 text-center">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="mb-6 animate-fade-in" style="animation-delay: 0.1s;">
+                            <img src="./index_files/retrogames-header-logo-C2fWGtr0.png" alt="RetroGames HueHue" class="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto drop-shadow-2xl object-contain">
+                        </div>
+                        
+                        <h1 class="font-arcade text-3xl md:text-5xl lg:text-6xl font-bold mb-4 text-glow animate-fade-in" style="animation-delay: 0.2s;">
+                            <span class="text-foreground">RETRO</span>
+                            <span class="text-foreground">GAMES</span>
+                        </h1>
+                        
+                        <h2 class="font-pixel text-xl md:text-3xl mb-8 animate-fade-in" style="animation-delay: 0.3s; letter-spacing: -10px;">
+                            <span class="text-blue-600">H</span>
+                            <span class="text-neon-yellow">u</span>
+                            <span class="text-primary">e</span>
+                            <span class="text-blue-600">H</span>
+                            <span class="text-neon-yellow">u</span>
+                            <span class="text-primary">e</span>
+                        </h2>
+                        
+                        <p class="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style="animation-delay: 0.4s;">
+                            Deguste o melhor dos jogos retrô! Arcade, Nintendo, Sega, PlayStation e muito mais. Jogue diretamente no seu navegador sem instalar nada.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style="animation-delay: 0.5s;">
+                            <a href="https://www.youtube.com/@juniorgameslives" target="_blank" rel="noopener noreferrer" class="btn-arcade px-8 py-4 rounded-xl flex items-center gap-3 text-base">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-5 h-5">
+                                    <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                                    <path d="m10 15 5-3-5-3z"></path>
+                                </svg>
+                                Junior Games
+                            </a>
+                            
+                            <a href="https://rahuehue-online.pages.dev/" target="_blank" rel="noopener noreferrer" class="btn-arcade px-8 py-4 rounded-xl flex items-center gap-3 text-base">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad2 w-5 h-5">
+                                    <line x1="6" x2="10" y1="11" y2="11"></line>
+                                    <line x1="8" x2="8" y1="9" y2="13"></line>
+                                    <line x1="15" x2="15.01" y1="12" y2="12"></line>
+                                    <line x1="18" x2="18.01" y1="10" y2="10"></line>
+                                    <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path>
+                                </svg>
+                                RAHueHue Online
+                            </a>
+                            
+                            <a href="https://play.webrcade.com/?feed=https://tinyurl.com/retrohue" target="_blank" rel="noopener noreferrer" class="btn-arcade px-8 py-4 rounded-xl flex items-center gap-3 text-base">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad2 w-5 h-5">
+                                    <line x1="6" x2="10" y1="11" y2="11"></line>
+                                    <line x1="8" x2="8" y1="9" y2="13"></line>
+                                    <line x1="15" x2="15.01" y1="12" y2="12"></line>
+                                    <line x1="18" x2="18.01" y1="10" y2="10"></line>
+                                    <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path>
+                                </svg>
+                                WebRcade HueHue
+                            </a>
+                        </div>
+                        
+                        <div class="flex flex-wrap justify-center gap-8 md:gap-16 mt-12 animate-fade-in" style="animation-delay: 0.6s;">
+                            <div class="text-center">
+                                <div class="font-arcade text-2xl md:text-3xl text-primary text-glow-sm">13+</div>
+                                <div class="text-sm text-muted-foreground mt-1">Plataformas</div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <div class="font-arcade text-2xl md:text-3xl text-neon-cyan text-glow-sm">5000+</div>
+                                <div class="text-sm text-muted-foreground mt-1">Jogos</div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <div class="font-arcade text-2xl md:text-3xl text-neon-pink text-glow-sm">100%</div>
+                                <div class="text-sm text-muted-foreground mt-1">Grátis</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent"></div>
+            </section>
+            
+            <main class="container mx-auto px-4 py-8 relative z-10">
+                <div class="text-center mb-8">
+                    <h2 class="font-arcade text-2xl md:text-3xl text-foreground mb-2">
+                        <span class="text-primary">Escolha</span> seu Console
+                    </h2>
+                    <p class="text-muted-foreground">Navegue pelas plataformas e encontre seus jogos favoritos.</p>
+                </div>
+                
+                <div class="mb-8">
+                    <div class="overflow-x-auto pb-4 scrollbar-hide">
+                        <div class="flex gap-2 md:gap-3 min-w-max px-4 md:px-0 justify-center">
+                            <button class="category-btn active flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium text-sm transition-all duration-300 border whitespace-nowrap bg-primary text-primary-foreground border-primary shadow-neon" data-category="all">
+                                <span class="text-lg">🎮</span>
+                                <span>Todos</span>
+                            </button>
+                            
+                            <button class="category-btn flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium text-sm transition-all duration-300 border whitespace-nowrap bg-card border-border hover:border-primary/50 hover:bg-card/80 text-foreground" data-category="arcade">
+                                <span class="text-lg">🕹️</span>
+                                <span>Arcade</span>
+                            </button>
+                            
+                            <button class="category-btn flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium text-sm transition-all duration-300 border whitespace-nowrap bg-card border-border hover:border-primary/50 hover:bg-card/80 text-foreground" data-category="nintendo">
+                                <span class="text-lg">🍄</span>
+                                <span>Nintendo</span>
+                            </button>
+                            
+                            <button class="category-btn flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium text-sm transition-all duration-300 border whitespace-nowrap bg-card border-border hover:border-primary/50 hover:bg-card/80 text-foreground" data-category="sega">
+                                <span class="text-lg">💎</span>
+                                <span>Sega</span>
+                            </button>
+                            
+                            <button class="category-btn flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium text-sm transition-all duration-300 border whitespace-nowrap bg-card border-border hover:border-primary/50 hover:bg-card/80 text-foreground" data-category="atari">
+                                <span class="text-lg">👾</span>
+                                <span>Atari</span>
+                            </button>
+                            
+                            <button class="category-btn flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium text-sm transition-all duration-300 border whitespace-nowrap bg-card border-border hover:border-primary/50 hover:bg-card/80 text-foreground" data-category="sony">
+                                <span class="text-lg">🎯</span>
+                                <span>Sony</span>
+                            </button>
+                            
+                            <button class="category-btn flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium text-sm transition-all duration-300 border whitespace-nowrap bg-card border-border hover:border-primary/50 hover:bg-card/80 text-foreground" data-category="portatil">
+                                <span class="text-lg">📱</span>
+                                <span>Portáteis</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                    <!-- Capcom -->
+                    <a href="https://rahuehue-online.pages.dev/lists/Capcom.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0s;" data-category="arcade">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/Capcom.png" alt="Arcade - Capcom" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Arcade - Capcom</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">arcade</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- Konami -->
+                    <a href="https://rahuehue-online.pages.dev/lists/Konami.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.05s;" data-category="arcade">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/Konami.png" alt="Arcade - Konami" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Arcade - Konami</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">arcade</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- SNK NeoGeo -->
+                    <a href="https://rahuehue-online.pages.dev/lists/SNK%20-%20NeoGeo.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.1s;" data-category="arcade">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/SNK - NeoGeo.png" alt="Arcade - SNK NeoGeo" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Arcade - SNK NeoGeo</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">arcade</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- Atari 2600 -->
+                    <a href="https://rahuehue-online.pages.dev/lists/Atari%202600.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.15s;" data-category="atari">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/Atari 2600.png" alt="Atari 2600" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Atari 2600</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">atari</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- GameBoy -->
+                    <a href="https://rahuehue-online.pages.dev/lists/GameBoy.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.2s;" data-category="portatil">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/GameBoy.png" alt="GameBoy" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">GameBoy</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">Portátil</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- GameBoy Color -->
+                    <a href="https://rahuehue-online.pages.dev/lists/GameBoy%20Color.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.25s;" data-category="portatil">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/GameBoy Color.png" alt="GameBoy Color" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">GameBoy Color</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">Portátil</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- GameBoy Advance -->
+                    <a href="https://rahuehue-online.pages.dev/lists/GameBoy%20Advance.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.3s;" data-category="portatil">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/GameBoy Advance.png" alt="GameBoy Advance" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">GameBoy Advance</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">Portátil</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- Mega Drive -->
+                    <a href="https://rahuehue-online.pages.dev/lists/Mega%20Drive.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.35s;" data-category="sega">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/Mega Drive.png" alt="Mega Drive" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Mega Drive</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">sega</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- Master System -->
+                    <a href="https://rahuehue-online.pages.dev/lists/Master%20System.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.4s;" data-category="sega">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/Master System.png" alt="Master System" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Master System</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">sega</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- Nintendo (NES) -->
+                    <a href="https://rahuehue-online.pages.dev/lists/Nintendo.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.45s;" data-category="nintendo">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/Nintendo.png" alt="Nintendo (NES)" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Nintendo (NES)</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">nintendo</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- Super Nintendo -->
+                    <a href="https://rahuehue-online.pages.dev/lists/Super%20Nintendo.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.5s;" data-category="nintendo">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/Super Nintendo.png" alt="Super Nintendo" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Super Nintendo</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">nintendo</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- Nintendo 64 -->
+                    <a href="https://rahuehue-online.pages.dev/lists/Nintendo%2064.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.55s;" data-category="nintendo">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/Nintendo 64.png" alt="Nintendo 64" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Nintendo 64</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">nintendo</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- PlayStation -->
+                    <a href="https://rahuehue-online.pages.dev/lists/Playstation.html" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.6s;" data-category="sony">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/Playstation.png" alt="PlayStation" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">PlayStation</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">sony</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    
+                    <!-- WebRcade HueHue -->
+                    <a href="https://play.webrcade.com/?feed=https://tinyurl.com/retrohue" class="group card-retro rounded-xl p-4 md:p-6 flex flex-col items-center text-center cursor-pointer animate-fade-in w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] xl:w-[calc(16.666%-1rem)]" style="animation-delay: 0.65s;" data-category="webrcade">
+                        <div class="relative mb-4">
+                            <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="./index_files/webrcade-huehue-icon-BASgqQxr.png" alt="WebRcade HueHue" class="console-icon w-16 h-16 md:w-20 md:h-20 object-contain relative z-10" loading="lazy">
+                        </div>
+                        <h3 class="font-arcade text-sm md:text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">WebRcade HueHue</h3>
+                        <span class="text-xs text-muted-foreground capitalize px-2 py-1 rounded-full bg-muted/50">webrcade</span>
+                        <div class="mt-4 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs font-medium">Ver jogos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </main>
+            
+            <footer class="border-t border-border/50 mt-16">
+                <div class="container mx-auto px-4 py-8">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="flex items-center gap-4">
+                            <img src="./index_files/retrogames-header-logo-C2fWGtr0.png" alt="RetroGames HueHue" class="w-12 h-12 object-contain">
+                            <div>
+                                <h3 class="font-arcade text-sm text-primary">RetroGames HueHue</h3>
+                                <p class="text-xs text-muted-foreground">Editado por Junior Games.</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://www.youtube.com/@juniorgameslives" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-sm text-muted-foreground hover:text-destructive transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-5 h-5 text-destructive">
+                                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                                <path d="m10 15 5-3-5-3z"></path>
+                            </svg>
+                            <span>Canal Junior Games</span>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-border/30 text-center">
+                        <p class="text-xs text-muted-foreground">© 2026 RetroGames HueHue. Jogue onde estiver no seu dispositivo pelo Navegador de Internet.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const gameCards = document.querySelectorAll('.card-retro');
+            
+            function filterGames(category) {
+                gameCards.forEach(card => {
+                    if (category === 'all') {
+                        card.style.display = 'flex';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    } else {
+                        const cardCategory = card.getAttribute('data-category');
+                        if (cardCategory === category) {
+                            card.style.display = 'flex';
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        } else {
+                            card.style.display = 'none';
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(10px)';
+                        }
+                    }
+                });
+            }
+            
+            function setActiveButton(activeButton) {
+                categoryButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.classList.remove('bg-primary', 'text-primary-foreground', 'border-primary', 'shadow-neon');
+                    btn.classList.add('bg-card', 'border-border', 'text-foreground');
+                });
+                
+                activeButton.classList.add('active');
+                activeButton.classList.add('bg-primary', 'text-primary-foreground', 'border-primary', 'shadow-neon');
+                activeButton.classList.remove('bg-card', 'border-border', 'text-foreground');
+            }
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    setActiveButton(this);
+                    filterGames(category);
+                });
+            });
+            
+            const initialActiveButton = document.querySelector('.category-btn[data-category="all"]');
+            if (initialActiveButton) {
+                setActiveButton(initialActiveButton);
+                filterGames('all');
+            }
+        });
+    </script>
+</body>
+</html>
